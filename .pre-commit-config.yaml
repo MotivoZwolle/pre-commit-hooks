@@ -16,7 +16,7 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/motivozwolle/pre-commit-hooks
-    rev: v1.0.0
+    rev: v1.0.1
     hooks:
       - id: shellcheck
 

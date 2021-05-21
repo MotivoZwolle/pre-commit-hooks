@@ -1,0 +1,9 @@
+- id: shellcheck
+  name: Shellcheck bash scripts
+  description: Check Bash scripts using shellcheck
+  entry: ./scripts/validate-bash.sh
+  language: script
+  types:
+    - executable
+  stages:
+    - commit

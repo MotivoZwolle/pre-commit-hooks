@@ -26,3 +26,10 @@ repos:
         - executable
       stages:
         - commit
+
+    - id: lint-php
+      name: Lint PHP
+      description: Lint PHP code
+      entry: php -l
+      language: system
+      files: '.php$'

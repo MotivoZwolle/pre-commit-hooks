@@ -12,7 +12,11 @@ This repository contains various pre-commit hooks we're just starting to collect
 
 [MIT](./LICENSE.md)
 
+## Available pre-commit hooks
+
 ### `add-ticket-to-commit`
+
+- **Runs on**: `prepare-commit-msg`
 
 We use Jira for our ticket management, and our branches usually follow the `feature/proj-103-short-description` method.
 This command adds the commit message to the start of the commit.
@@ -34,6 +38,8 @@ repos:
 [2]: https://betterprogramming.pub/how-to-automatically-add-the-ticket-number-in-git-commit-message-bda5426ded05
 
 ## `shellcheck`
+
+- **Runs on**: `commit`
 
 Checks the bash scripts in the repository against `shellcheck` for common errors.
 

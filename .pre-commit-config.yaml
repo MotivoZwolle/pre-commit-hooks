@@ -15,18 +15,13 @@ repos:
       - id: mixed-line-ending
       - id: trailing-whitespace
 
+  - repo: https://github.com/motivozwolle/pre-commit-hooks
+    rev: v1.0.0
+    hooks:
+      - id: shellcheck
+
   - repo: local
     hooks:
-    - id: shellcheck
-      name: Shellcheck bash scripts
-      description: Check Bash scripts using shellcheck
-      entry: ./scripts/validate-bash.sh
-      language: script
-      types:
-        - executable
-      stages:
-        - commit
-
     - id: lint-php
       name: Lint PHP
       description: Lint PHP code

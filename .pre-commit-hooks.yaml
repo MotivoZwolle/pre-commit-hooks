@@ -1,3 +1,12 @@
+- id: add-ticket-to-commit
+  name: Add ticket ID to commit message
+  description: prepare-commit-msg hook for adding ticket code with pre-commit.
+  entry: ./scripts/add-ticket-to-commit
+  stages:
+    - prepare-commit-msg
+  language: script
+  always_run: true
+
 - id: shellcheck
   name: Shellcheck bash scripts
   description: Check Bash scripts using shellcheck
